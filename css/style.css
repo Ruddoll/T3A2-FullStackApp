@@ -397,12 +397,13 @@ header {
 
 .section__subtitle--intro {
     display: inline;
+    color: var(--clr-secondary);
 }
 
 @media (min-width: 600px) {
     .intro {
-        display: grid;
-        width: min-content;
+        /* display: grid; */
+        /* width: 90vw; */
         margin: 0 auto;
         grid-column-gap: 1em;
         grid-template-areas: 
@@ -424,7 +425,7 @@ header {
         grid-row: 2;
         text-align: right;
         position: relative;
-        left: -1.5em;
+        /* left: -1.5em; */
         width: calc(100% + 1.5em);
     }
 }
