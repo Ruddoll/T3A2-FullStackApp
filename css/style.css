@@ -332,6 +332,11 @@ header {
     object-position: center;
 }
 
+.blog-vid iframe {
+    width: 350px; 
+    height: 200px;
+}
+
 .blog-text {
     padding: 30px;
     display: flex;
