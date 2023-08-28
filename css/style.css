@@ -652,3 +652,56 @@ header {
     margin-left: auto;
     margin-right: auto;
 }
+
+
+
+/* User Registration page */
+
+.sign-up_page { 
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../img/signup.jpg');
+    background-size:cover;
+    backdrop-filter: blur(5px); 
+    background-position: center;
+    background-repeat: no-repeat; 
+  }
+  
+  .sign-up_container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    background-color: var(--clr-primary);
+  }
+  
+  .registration-form {
+    background-color: var(--clr-primary);
+    padding: 40px;
+    border-radius: 7px;
+  }
+  
+  /* this is for the sign up tittle */
+  .sign-up_title {
+    padding-bottom: 1.5rem;
+    font-size: 37px;
+    font-weight: var(--fw-bold);
+    text-align: center;
+  }
+  
+  .form_label {
+    font-weight: var(--fw-bold);
+  }
+  
+  .form_input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid var(--clr-secondary);
+    border-radius: 3px;
+  }
+  
+
