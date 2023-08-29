@@ -14,8 +14,6 @@ app.get('/test', (req, res) => {
 });
 
 // Routes
-const routes = require('./routes'); // Create this file later
-app.use('/api', routes);
 app.use('/api/classes', classesRoutes);
 app.use('/api/progress', progressRoutes);
 
