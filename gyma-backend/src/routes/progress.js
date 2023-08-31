@@ -1,41 +1,38 @@
 const express = require('express');
 const router = express.Router();
+const Progress = require('../models/Progress');
 
-// Sample data: replace this with actual data from your database
-const userProgress = {
-  userId: 1,
-  workouts: [],
-  measurements: [],
-};
+// Route to add progress for a class
+router.post('/add', async (req, res) => {
+  const { classID, progressValue } = req.body;
 
-// Get user progress
-router.get('/:userId', (req, res) => {
-  const { userId } = req.params;
+  try {
+    const newProgress = new Progress({
+      classID: classID,
+      progress: progressValue,
+      // ... other fields
+    });
 
-  // Fetch user progress from your database
-  // For now, using the sample data
-  const userProgressData = userProgress[userId] || { workouts: [], measurements: [] };
-  res.json(userProgressData);
+    await newProgress.save();
+    res.json({ message: 'Progress added successfully' });
+  } catch (error) {
+    res.status(500).json({ error: 'Unable to add progress' });
+  }
 });
 
-// Log a workout
-router.post('/workout', (req, res) => {
-  const { userId, workoutData } = req.body;
+// Route to get progress for a class
+router.get('/:classID', async (req, res) => {
+  const classID = req.params.classID;
 
-  // Implement logic to log the workout
-  // Update the user's workout data in the database
-
-  res.json({ message: 'Workout logged' });
-});
-
-// Log measurements
-router.post('/measurements', (req, res) => {
-  const { userId, measurementsData } = req.body;
-
-  // Implement logic to log measurements
-  // Update the user's measurements data in the database
-
-  res.json({ message: 'Measurements logged' });
+  try {
+    const progress = await Progress.findOne({ classID: classID });
+    if (!progress) {
+      return res.status(404).json({ error: 'Progress not found' });
+    }
+    res.json(progress);
+  } catch (error) {
+    res.status(500).json({ error: 'Unable to fetch progress' });
+  }
 });
 
 module.exports = router;
