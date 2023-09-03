@@ -637,6 +637,13 @@ header {
     padding: .5em;
 }
 
+.copyright {
+    margin: 0;
+    background-color: var(--clr-secondary);
+    color: var(--clr-primary);
+    font-size: .7rem;
+}
+
 
 
 /* Individual item styles */
