@@ -1060,3 +1060,52 @@ input[type=radio]:checked ~ .option {
     from {opacity: 0;}
     to {opacity: 1;}
   }
+
+
+
+  /* Classes */
+
+.class-box {
+    width: 80vw;
+    background-color: var(--clr-primary);
+    border: 1px solid var(--clr-primary);
+    margin: 20px;
+    box-shadow: var(--bs);
+    display: inline-flex;
+}
+
+.class-img {
+    width: 100%;
+    height: auto;
+}
+
+.class-img img {
+    width: 100%;
+    height: 259px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.class-text2 {
+    text-align: right;
+}
+
+@media (max-width: 800px) {
+    .class-box {
+        display: grid;
+        width: 350px;
+        background-color: var(--clr-primary);
+        border: 1px solid var(--clr-primary);
+        margin: 20px;
+        box-shadow: var(--bs);
+    }
+
+    .class-text, .class-text2 {
+        text-align: center;
+    }
+
+    .class-box-alt div:nth-of-type(1) {
+        order: 2;
+    }
+
+}
