@@ -1,0 +1,155 @@
+<!DOCTYPE html></DOCTYPE>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>GymA</title>
+        <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" /> 
+
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="./src/style.css"> 
+
+    </head>
+    <body>
+
+        <!-- Navbar -->
+        <header>
+            <div class="logo">
+                <a href="./index.html"><img src="" alt="logo"></a>
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item current-page"><a href="./index.html" class="nav__link">Home</a></li>
+                        <li class="nav__item"><a href="../src/pages/classes.html" class="nav__link">Classes</a></li>
+                        <li class="nav__item"><a href="../src/pages/progress.html" class="nav__link">Progress</a></li>
+                        <li class="nav__item"><a href="../src/pages/blog.html" class="nav__link">Blog</a></li>
+                        <li class="nav__item"><a href="../src/pages/about.html" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="../src/pages/contact.html" class="nav__link">Contact</a></li>
+                    </ul>
+                </nav>
+        </header>
+
+
+        <!-- Introduction -->
+        <section class="intro" id="home">
+            <h1 class="section__title section__title--intro">
+                Blah blah <strong>GymA</strong>
+            </h1>
+            <!-- <p class="section__subtitle section__subtitle--intro">...</p>
+            <img src="./img/" alt="a picture of the gym?" class="intro__img"> -->
+        </section>
+
+
+        <!-- About us -->
+        <section class="about-us" id="about">
+            <h2 class="section__title section__title--about">We are</h2>
+            <p class="section__subtitle section__subtitle--about">GymA</p>
+
+            <div class="about-us__body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+           
+            <img src="./img/Rope.jpg" alt="img of gym staff?" class="about-us__img">
+        </section>
+
+
+        <!-- Services -->
+        <section class="services">
+
+            <!-- heading -->
+            <div class="service-heading">
+                <h3>Services</h3>
+            </div>
+
+            <!-- service container -->
+            <div class="service-container">
+
+                <!-- classes box -->
+                <div class="service-box">
+                    <div class="service-img">
+                        <img src="./img/Rope.jpg" alt="relevant image">
+                    </div>
+
+                    <!-- text -->
+                    <div class="service-text">
+                        <a href="./pages/classes.html" class="service-title">Classes</a>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <a href="./pages/classes.html">Go to page</a>
+                    </div>
+
+                </div>
+
+                <!-- progress box -->
+                <div class="service-box">
+                    <div class="service-img">
+                        <img src="./img/Weight.jpg" alt="relevant image">
+                    </div>
+
+                    <!-- text -->
+                    <div class="service-text">
+                        <a href="./src/pages/progress.html" class="service-title">Track your Progress</a>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <a href="./src/pages/progress.html">Go to page</a>
+                    </div>
+
+                </div>
+
+                <!-- blog box -->
+                <div class="service-box">
+                    <div class="service-img">
+                        <img src="./img/signup.jpg" alt="relevant image">
+                    </div>
+
+                    <!-- text -->
+                    <div class="service-text service-text">
+                        <a href="./src/pages/blog.html" class="service-title">Blog Page</a>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <a href="src/pages/blog.html">Go to page</a>
+                    </div>
+
+                </div>
+ 
+            </div>
+            
+            <!-- Join Button -->
+            <a href="/register">
+                <button class="btn" id="join-btn">Join Now</button>
+            </a>
+
+        </section>
+
+
+        <!-- Footer -->
+        <footer class="footer" id="footer">
+            <a href="mailto:gyma@gmail.com" class="footer__link">gyma@gmail.com</a>
+            <ul class="social-list">
+                <li class="social-list__item"><a class="social-list__link" href="https://www.instagram.com" target="_blank"><img src="" alt="insta logo"></a></li>
+                <li class="social-list__item"><a class="social-list__link" href="https://twitter.com" target="_blank"><img src="" alt="X logo"></a></li>
+                <li class="social-list__item"><a class="social-list__link" href="https://www.facebook.com" target="_blank"><img src="" alt="Facebook logo"></a></li>
+            </ul>
+        </footer>
+        <p class="copyright">© 2023 GymA, LLC</p>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+              const navToggle = document.querySelector('.nav-toggle');
+              navToggle.addEventListener('click', () => {
+                document.body.classList.toggle('nav-open');
+              });
+        
+              // Add this event listener for the Join Now button
+              const joinButton = document.getElementById('join-btn');
+              joinButton.addEventListener('click', () => {
+                // Redirect to your React component
+                window.location.href = '/register'; // Replace with the actual path
+              });
+            });
+          </script>
+        
+    </body>
+</html>
