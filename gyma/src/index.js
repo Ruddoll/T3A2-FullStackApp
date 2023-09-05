@@ -1,17 +1,25 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import ReactDOM from 'react-dom';
+import '../css/style.css';
+import App from './App.jsx';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
+
+// Render the application by placing the App component into the 'root' HTML element.
+ReactDOM.render(
   <React.StrictMode>
-    <App />
-  </React.StrictMode>
+    {/* 
+      Render the 'App' component inside a 'React.StrictMode' wrapper.
+      The 'isRegisterMode' prop is set to 'false' to initially show the login mode.
+    */}
+    <App isRegisterMode={false} />
+  </React.StrictMode>,
+  document.getElementById('root') // Render the application in the root HTML element.
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+
+const navToggle = document.querySelector('.nav-toggle');
+navToggle.addEventListener('click', () => {
+    document.body.classList.toggle('nav-open'); 
+});
+
+
